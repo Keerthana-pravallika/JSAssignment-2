@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h2>Array Methods</h2>
+    <p>concat() - Joins two or more arrays, and returns a copy of the joined arrays</p>
+    <p>copyWithin() - array.copyWithin(target, start, end) - Copies array elements within the array, to and from specified positions</p>
+    <p>every() - Checks if every element in an array pass a test</p>
+    <p>fill() - 	Fill the elements in an array with a static value
+    </p>
+    <p>find() - Returns the value of the first element in an array that pass a test</p>
+    <p>findIndex() - Returns the index of the first element in an array that pass a test</p>
+    <p> from() - Creates an array from an object</p>
+    <p>includes() -	Check if an array contains the specified element</p>
+    <p>indexOf() - Search the array for an element and returns its position</p>
+    <p>isArray() -Checks whether an object is an array</p>
+    <p>join() - Joins all elements of an array into a string</p>
+    <p>lastIndexOf() - Search the array for an element, starting at the end, and returns its position </p>
+    <p> pop() - Removes the last element of an array, and returns that element</p>
+    <p> push() - Adds new elements to the end of an array, and returns the new length</p>
+    <p> reverse() - Reverses the order of the elements in an array</p>
+    <p>shift() - Removes the first element of an array, and returns that element</p>
+    <p>slice() - Selects a part of an array, and returns the new array </p>
+    <p>sort() - Sorts the elements of an array</p>
+
+    <script type="text/javascript">
+        
+        // concat() - Joins two or more arrays, and returns a copy of the joined arrays
+        let arr1 = [1,2,3];
+        let arr2 = [4,5,6];
+        console.log(arr1.concat(arr2));
+
+        // copyWithin() - array.copyWithin(target, start, end) - Copies array elements within the array, to and from specified positions
+
+        let arr = [1,2,3,4]
+        console.log(arr.copyWithin(2,0));
+
+        // every() - Checks if every element in an array pass a test
+
+        // fill() - 	Fill the elements in an array with a static value
+
+        console.log(arr1.fill(7));
+
+        // find() - Returns the value of the first element in an array that pass a test
+
+        // findIndex() - Returns the index of the first element in an array that pass a test
+
+        // from() - Creates an array from an object
+
+        console.log(Array.from("123"));
+
+        // includes() -	Check if an array contains the specified element
+
+        console.log(arr1.includes(6));
+
+        // indexOf() - Search the array for an element and returns its position
+
+        console.log(arr.indexOf(2));
+
+        // isArray() -Checks whether an object is an array
+
+        console.log(Array.isArray(arr));
+
+        // join() - Joins all elements of an array into a string
+
+        console.log(arr1.join())
+
+        // lastIndexOf() - Search the array for an element, starting at the end, and returns its position
+
+        console.log(arr1.lastIndexOf(7));
+
+        // pop() - Removes the last element of an array, and returns that element
+
+        console.log(arr.pop())
+
+        // push() - Adds new elements to the end of an array, and returns the new length
+        
+        console.log(arr.push(4));
+
+        // reverse() - Reverses the order of the elements in an array
+
+        console.log(arr.reverse());
+
+        // shift() - Removes the first element of an array, and returns that element
+
+        console.log(arr.shift())
+
+        // slice() - Selects a part of an array, and returns the new array
+
+        console.log(arr.slice(0,2));
+
+        // sort() - Sorts the elements of an array
+
+        console.log(arr.sort())
+
+    </script>
+</body>
+</html>

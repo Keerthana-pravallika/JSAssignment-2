@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h2>String Methods</h2>
+    <p>concat() - Joins two or more strings, and returns a new joined strings</p>
+    <p> includes() - Checks whether a string contains the specified string/characters</p>
+    <p>fromCharCode() - Converts Unicode values to characters</p>
+    <p>trim() - Removes whitespace from both ends of a string</p>
+    <p>substring - Extracts the characters from a string, between two specified indices</p>
+    <p> substr() - Extracts the characters from a string, beginning at a specified start position, and through the specified number of characters</p>
+    <p>startsWith() - Checks whether a string begins with specified characters</p>
+    <p>split() - Splits a string into an array of substrings</p>
+    <p>slice() - Extracts a part of a string and returns a new string</p>
+    <p>search() - Searches a string for a specified value  and returns the position of the match</p>
+    <p> replace() - Searches a string for a specified value and returns a new string where the specified values are replaced</p>
+    <p> repeat() - Returns a new string with a specified number of copies of an existing string</p>
+    <script type="text/javascript">
+        // concat() - Joins two or more strings, and returns a new joined strings
+
+        let str1 = "Hello";
+        let str2 = " Everyone!";
+        console.log(str1.concat(str2)); 
+        
+        // includes() - Checks whether a string contains the specified string/characters
+
+        let str = "Hello Everyone! Hope you are doing well ";
+        console.log(str.includes("Hope"));
+
+        // fromCharCode() - Converts Unicode values to characters
+
+        let s = String.fromCharCode(67);
+        console.log(s); 
+
+        // trim() - 	Removes whitespace from both ends of a string
+
+        let str3 = "    Good Morning   ";
+        console.log(str3.trim());
+
+        // substring - Extracts the characters from a string, between two specified indices
+
+        console.log(str.substring(2,5));
+
+        // substr() - Extracts the characters from a string, beginning at a specified start position, and through the specified number of character
+
+        console.log(str.substr(1,8));
+
+        //startsWith() - Checks whether a string begins with specified characters
+
+        console.log(str.startsWith("hi"));
+
+        // split() - Splits a string into an array of substrings
+
+        console.log(str.split(" "));
+
+        // slice() - Extracts a part of a string and returns a new string
+
+        console.log(str.slice(0,5));
+
+        // search() - Searches a string for a specified value  and returns the position of the match
+
+        console.log(str.search("you"));
+
+        // replace() - Searches a string for a specified value and returns a new string where the specified values are replaced
+
+        console.log(str3.replace("Morning","Afternoon"));
+
+        // repeat() - Returns a new string with a specified number of copies of an existing string
+
+        console.log(str.repeat(2));
+    </script>
+</body>
+</html>
